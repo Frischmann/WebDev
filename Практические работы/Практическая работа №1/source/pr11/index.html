@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Практическое задание №11</title>
+    <link rel="stylesheet" href="style.css" />
+    <script>
+      function myFunction() {
+        var popup = document.getElementById("myPopup");
+        popup.classList.toggle("show");
+      }
+    </script>
+  </head>
+  <body>
+    <div class="box">
+      <p>
+        <b>Ваше ФИО:</b><br />
+        <input type="text" size="40" />
+      </p>
+      <p>
+        <b>Номер телефона:</b><br />
+        <input type="tel" size="40" />
+      </p>
+      <p>
+        <b>Ваш E-mail:</b><br />
+        <input type="email" size="40" />
+      </p>
+      <p>
+        <b>Введите пароль:</b><br />
+        <input type="password" size="40" />
+      </p>
+
+      <div class="popup" onclick="myFunction()">
+        <input type="submit" />
+        <span class="popuptext" id="myPopup"><p>Регистрация успешна!</p></span>
+      </div>
+    </div>
+  </body>
+</html>
