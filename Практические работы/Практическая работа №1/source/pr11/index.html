@@ -4,37 +4,46 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Практическое задание №11</title>
-    <link rel="stylesheet" href="style.css" />
-    <script>
-      function myFunction() {
-        var popup = document.getElementById("myPopup");
-        popup.classList.toggle("show");
-      }
-    </script>
   </head>
   <body>
-    <div class="box">
-      <p>
-        <b>Ваше ФИО:</b><br />
-        <input type="text" size="40" />
-      </p>
-      <p>
-        <b>Номер телефона:</b><br />
-        <input type="tel" size="40" />
-      </p>
-      <p>
-        <b>Ваш E-mail:</b><br />
-        <input type="email" size="40" />
-      </p>
-      <p>
-        <b>Введите пароль:</b><br />
-        <input type="password" size="40" />
-      </p>
-
-      <div class="popup" onclick="myFunction()">
-        <input type="submit" />
-        <span class="popuptext" id="myPopup"><p>Регистрация успешна!</p></span>
-      </div>
-    </div>
+    <p>
+      <b>Ваше ФИО:</b><br />
+      <input type="text" size="40" />
+    </p>
+    <p>
+      <b>Ваш пол:</b><br />
+      <input type="radio" name="sex" value="male" /> Мужчина 👨‍🎓 <br />
+      <input type="radio" name="sex" value="female" /> Женщина 👩‍🎓 <br />
+    </p>
+    <p>
+      <b>Знание языка/ов программирования:</b><br />
+      <input type="checkbox" name="pl" value="c++" /> C++<br />
+      <input type="checkbox" name="pl" value="c#" /> C#<br />
+      <input type="checkbox" name="pl" value="python" /> Python<br />
+      <input type="checkbox" name="pl" value="go" /> Go<br />
+      <input type="checkbox" name="pl" value="javascript" /> JavaScript<br />
+    </p>
+    <p>
+      <b>Профессия:</b><br />
+      <select size="1">
+        <option>Выберите вашу профессию</option>
+        <option value="full">Full stack development</option>
+        <option value="front">Front-end development</option>
+        <option value="end">Back-end development</option>
+      </select>
+    </p>
+    <p>
+      <b>Номер телефона:</b><br />
+      <input type="tel" size="40" />
+    </p>
+    <p>
+      <b>Ваш E-mail:</b><br />
+      <input type="email" size="40" />
+    </p>
+    <p>
+      <b>Введите пароль:</b><br />
+      <input type="password" size="40" />
+    </p>
+    <input type="submit" />
   </body>
 </html>
