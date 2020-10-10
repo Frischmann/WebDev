@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Практическое задание №11</title>
+  </head>
+  <body>
+    <form action="">
+        <fieldset>
+            <legend>Форма регистрации</legend>
+            <label for="">ФИО</label>
+            <input type="text" placeholder="Введите свое ФИО"></input><br><br>
+            
+            <label for="">Ваш пол: </label><br>
+            <input type="radio" name="sex" value="male" /> Мужчина 👨‍<br>
+            <input type="radio" name="sex" value="female" /> Женщина 👩‍<br><br>
+            
+            <label for="">Знание языка/ов программирования: </label><br>
+            <input type="checkbox" name="pl" value="c++" /> C++<br />
+            <input type="checkbox" name="pl" value="c#" /> C#<br />
+            <input type="checkbox" name="pl" value="python" /> Python<br />
+            <input type="checkbox" name="pl" value="go" /> Go<br />
+            <input type="checkbox" name="pl" value="javascript" /> JavaScript<br /><br>
+            
+            <label for="">Профессия: </label><br>
+            <select size="1">
+                <option>Выберите вашу профессию</option>
+                <option value="full">Full stack development</option>
+                <option value="front">Front-end development</option>
+                <option value="end">Back-end development</option>
+            </select><br><br>
+            
+            <label for="">Номер телефона:</label><br>
+            <input type="tel" placeholder="+7(XXX)XX-XX"></input><br><br>
+            
+            <label for="">Ваш E-mail:</label><br>
+            <input type="email" placeholder="example@email.com"></input><br><br>
+            
+            <label for="">Введите пароль:</label><br>
+            <input type="password" placeholder="Ваш пароль"></input><br><br>
+            
+            <input type="submit" />
+        </fieldset>
+    </form>
+  </body>
+</html>

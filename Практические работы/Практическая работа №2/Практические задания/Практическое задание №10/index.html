@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Практическое задание №10</title>
+  </head>
+  <body>
+    <span>Николаев-Аксенов Иван Сергеевич</span>
+
+    <script>
+        function draw() {
+            var ctx = document.getElementById("canv").getContext("2d");
+            ctx.arc(100, 100, 70, 0, Math.PI*2, false);
+            ctx.moveTo(150, 100);
+            ctx.arc(100, 100, 50, 0, Math.PI*2, true);
+            ctx.stroke();
+        }
+
+        window.onload = draw;
+    </script>
+
+    <canvas id="canv" width="200" height="200">
+  </body>
+</html>

@@ -1,0 +1,16 @@
+.stih {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: #D3D0CB;
+    color: #393E41;
+
+    border-radius: 10px;
+    border: 3px solid #586994;
+
+    padding: 5px 20px;
+
+    margin: 2% 15%;
+}
+
+.stih h2{
+    text-align: center;
+}
