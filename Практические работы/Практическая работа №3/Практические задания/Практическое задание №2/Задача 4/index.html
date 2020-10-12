@@ -1,18 +1,196 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
+  <head>
+    <meta charset="UTF-8" />
     <title>Практическое задание №2. Задача 4</title>
-</head>
-<body>
-    <ul>
-        <li style="content: "u+2660 ISOpub""></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-    </ul>
-</body>
+    <style>
+      #hearts::after {
+        /* Символ червы */
+        content: " \2665";
+      }
+
+      #diamonds::after {
+        /* Символ бубны */
+        content: " \2666";
+      }
+
+      #clubs::after {
+        /* Символ трефы */
+        content: " \2663";
+      }
+
+      #spades::after {
+        /* Символ пик */
+        content: " \2660";
+      }
+
+      #alpha::after {
+        /* Буква альфа */
+        content: " \0391";
+      }
+
+      #beta::after {
+        /* Буква бета */
+        content: " \0392";
+      }
+
+      #gamma::after {
+        /* Буква гамма */
+        content: " \0393";
+      }
+
+      #delta::after {
+        /* Буква дельта */
+        content: " \0394";
+      }
+
+      #epsilon::after {
+        /* Буква эпсилон */
+        content: " \0395";
+      }
+
+      #won::after {
+        /* Символ вона */
+        content: " \20A9";
+      }
+
+      #sheqel::after {
+        /* Символ шекеля */
+        content: " \20AA";
+      }
+
+      #cruzeiro::after {
+        /* Символ крузейро */
+        content: " \20A2";
+      }
+
+      #frenchFrank::after {
+        /* Символ французского франка */
+        content: " \20A3";
+      }
+
+      #copyright::after {
+        /* Символ копирайта */
+        content: " \00A9";
+      }
+
+      #registered::after {
+        /* Символ зарегистрированной торговой марки */
+        content: " \00AE";
+      }
+
+      #tradeMark::after {
+        /* Символ незарегистированной торговой марки */
+        content: " \2122";
+      }
+
+      #oneQuarter::after {
+        /* Символ 1/4 */
+        content: " \00BC";
+      }
+
+      #oneHalf::after {
+        /* Символ 1/2 */
+        content: " \00BD";
+      }
+
+      #threeQuarters::after {
+        /* Символ 3/4 */
+        content: " \00BE";
+      }
+
+      #pilcrow::after {
+        /* Символ конца абзаца */
+        content: " \00B6";
+      }
+
+      #section::after {
+        /* Символ параграфа */
+        content: " \00A7";
+      }
+
+      #minus::after {
+        /* Символ тире */
+        content: " \2010";
+      }
+
+      #longHyphen::after {
+        /* Символ длинного тире */
+        content: " \2015";
+      }
+
+      #info::after {
+        /* Символ информационного источника */
+        content: " \2139";
+      }
+
+      #fax::after {
+        /* Символ факса */
+        content: " \213B";
+      }
+
+      #tel::after {
+        /* Символ телефона */
+        content: " \2121";
+      }
+
+      #emptySet::after {
+        /* Символ пустого множества */
+        content: " \2205";
+      }
+
+      #volIntegral::after {
+        /* Символ интеграла по объему */
+        content: " \2230";
+      }
+    </style>
+  </head>
+  <body>
+    <ol>
+      <li>
+        Вот обозначения мастей карт: Червы - <span id="hearts"></span>, Бубны -
+        <span id="diamonds"></span>, Трефы - <span id="clubs"></span>, Пики -
+        <span id="spades"></span>
+      </li>
+      <li>
+        Почти все буквы греческого алфавита имеют финийский прообраз, так
+        например - альфа <span id="alpha"></span> произошла от алеф, бета
+        <span id="beta"></span> от бет, гамма <span id="gamma"></span> от
+        гимель, дельта <span id="delta"></span> от делт, эпсилон
+        <span id="epsilon"></span> от хе.
+      </li>
+      <li>
+        Многие денежные единицы имеют свои обзначения, так например вон -
+        <span id="won"></span>, шекель - <span id="sheqel"></span>, крузейро -
+        <span id="cruzeiro"></span>, французский франк -
+        <span id="frenchFrank"></span>
+      </li>
+      <li>
+        Имущественное авторское право, то есть право копировать, воспроизводить,
+        имеет знак <span id="copyright"></span>, знак зарегистрированного
+        товарного знака (торговой марки) - <span id="registered"></span>, а
+        незарегистрированная торговая марка - <span id="tradeMark"></span>
+      </li>
+      <li>
+        Часто используемые дроби - это <span id="oneQuarter"></span>,
+        <span id="oneHalf"></span>, <span id="threeQuarters"></span>
+      </li>
+      <li>
+        Символ для обзначения окончания абзаца имеет следующий вид:
+        <span id="pilcrow"></span>. Параграф — часть текста внутри раздела
+        книги, статьи или документа, содержащая законченное положение или
+        правило и имеющая самостоятельное значение обозначается
+        <span id="section"></span> символом. Тире имеет несколько видов, так
+        например обычное тире: <span id="minus"></span>, а это длинное:
+        <span id="longHyphen"></span>.
+      </li>
+      <li>
+        На мой взгляд следует дополнить данный список следующими полезными
+        символами: <span id="info"></span> - информационный источник,
+        <span id="fax"></span> - символ факса, <span id="tel"></span> - символ
+        телефона, <span id="emptySet"></span> - пустое множество,
+        <span id="volIntegral"></span> - интеграл по объему.
+      </li>
+    </ol>
+  </body>
 </html>

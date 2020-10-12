@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Практическое задание №2. Задача 7</title>
+    <script>
+        function checkUp(x, numb) {
+            switch(numb) {
+                case 1: {
+                    document.getElementById("fst").className = "valid";
+                    break;
+                }
+                case 2: {
+                    document.getElementById("snd").className = "valid";
+                    break;
+                }
+                case 3: {
+                    document.getElementById("trd").className = "valid";
+                    break;
+                }
+                case 4: {
+                    document.getElementById("fourth").className = "valid";
+                    break;
+                }
+            }
+        }
+    </script>
+    <style>
+        .invalid::before {
+            content: "\002A";
+            color: red;
+        }
+
+        .valid::before {
+            content: "\2713";
+            color: green;
+        }
+    </style>
+</head>
+<body>
+    <form action="">
+        <fieldset>
+            <legend>Опрос</legend>
+            <label for="name"><span id = "fst" class="invalid"></span> Имя пользователя</label><br>
+            <input id="name" type="text" placeholder="Ваше имя" oninput="checkUp(this, 1)"></input><br><br>
+            
+            <label for="age"><span id = "snd" class="invalid"></span> Сколько вам лет</label><br>
+            <input id="age" type="number" placeholder="Ваш возраст" oninput="checkUp(this, 2)"></input><br><br>
+
+            <label for="work"><span id = "trd" class="invalid"></span> Вы учитесь или работаете?</label><br>
+            <input id="work" type="text" placeholder="Место работы/учебы" oninput="checkUp(this, 3)"></input><br><br>
+
+            <label for="freeTime"><span id = "fourth" class="invalid"></span> Сколько у вас свободного времени?</label><br>
+            <input id="freeTime" type="text" placeholder="Кол-во свободного времени" oninput="checkUp(this, 4)"></input><br><br>
+
+            <label for="act">Что вы обычно делаете в свободное время?</label><br>
+            <input id="act" type="text"></input><br><br>
+
+            <input type="submit"></input><br><br>
+
+        </fieldset>
+    </form>
+</body>
+</html>

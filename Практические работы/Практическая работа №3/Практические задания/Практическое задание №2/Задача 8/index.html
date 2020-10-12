@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Практическое задание №2. Задача 8</title>
+    <style>
+      .box {
+        position: relative;
+        width: 50%;
+      }
+
+      .box:after {
+        content: "";
+        display: block;
+        padding-bottom: 100%;
+      }
+
+      .lorem {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+
+        border: 2px solid black;
+
+        text-align: center;
+        vertical-align: middle;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box">
+      <div class="lorem">
+        <p>
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vero cum sed
+          incidunt nam natus similique necessitatibus aperiam libero. Quod
+          necessitatibus dolor cupiditate vel amet officia enim sit magni?
+          Beatae, eius.
+        </p>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Практическое задание №2. Задача 9</title>
+    <style>
+      .default {
+        background-color: white;
+        color: black;
+      }
+
+      .marked {
+        background-color: yellow;
+        color: black;
+      }
+    </style>
+    <script>
+      function checkUp(numb) {
+        switch (numb) {
+          case 1: {
+            if (document.getElementById("html").checked)
+              document.getElementById("fst").className = "marked";
+            else document.getElementById("fst").className = "default";
+            break;
+          }
+          case 2: {
+            if (document.getElementById("css").checked)
+              document.getElementById("snd").className = "marked";
+            else document.getElementById("snd").className = "default";
+            break;
+          }
+          case 3: {
+            if (document.getElementById("js").checked)
+              document.getElementById("trd").className = "marked";
+            else document.getElementById("trd").className = "default";
+            break;
+          }
+          case 4: {
+            if (document.getElementById("u").checked)
+              document.getElementById("fourth").className = "marked";
+            else document.getElementById("fourth").className = "default";
+            break;
+          }
+        }
+      }
+    </script>
+  </head>
+  <body>
+    <input type="checkbox" id="html" name="html" onclick="checkUp(1)" />
+    <label for="html"
+      ><span class="default" id="fst"><b>HTML</b></span></label
+    ><br />
+
+    <input type="checkbox" id="css" name="css" onclick="checkUp(2)" />
+    <label for="css"
+      ><span class="default" id="snd"><b>CSS</b></span></label
+    ><br />
+
+    <input type="checkbox" id="js" name="js" onclick="checkUp(3)" />
+    <label for="js"
+      ><span class="default" id="trd"><b>JS</b></span></label
+    ><br />
+
+    <input type="checkbox" id="u" name="u" onclick="checkUp(4)" />
+    <label for="u"
+      ><span class="default" id="fourth"><b>U</b></span></label
+    ><br /><br />
+
+    <input type="submit" />
+  </body>
+</html>
