@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        background-color: #333;
+      }
+
+      li {
+        float: left;
+      }
+
+      li a,
+      .wikib {
+        display: inline-block;
+        color: white;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+      }
+
+      li a:hover,
+      .wiki:hover .wikib {
+        background-color: red;
+      }
+
+      li.wiki {
+        display: inline-block;
+      }
+
+      .wiki-l {
+        display: none;
+        position: absolute;
+        background-color: #f9f9f9;
+        min-width: 160px;
+        box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+        z-index: 1;
+      }
+
+      .wiki-l a {
+        color: black;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+        text-align: left;
+      }
+
+      .wiki-l a:hover {
+        background-color: #f1f1f1;
+      }
+
+      .wiki:hover .wiki-l {
+        display: block;
+      }
+    </style>
+    <title>Практическое задание №10</title>
+  </head>
+  <body>
+    <ul>
+      <li><a href="index.html">Домой</a></li>
+      <li><a href="about.html" target="_black">О странице</a></li>
+      <li class="wiki">
+        <a href="javascript:void(0)" class="wikib">Статьи</a>
+        <div class="wiki-l">
+          <a
+            href="https://ru.wikipedia.org/wiki/GNU_Affero_General_Public_License"
+            target="_blank"
+            >GNU Affero General Public License</a
+          >
+          <a
+            href="https://ru.wikipedia.org/wiki/Свободное_программное_обеспечение"
+            target="_blank"
+            >Свободное программное обеспечение</a
+          >
+          <a
+            href="https://ru.wikipedia.org/wiki/Свободная_лицензия"
+            target="_blank"
+            >Свободная лицензия</a
+          >
+        </div>
+      </li>
+      <li>
+        <a href="https://github.com/Frischmann" target="_blank">GitHub</a>
+      </li>
+      <li><a href="mailto:nikolaevaxenov@gmail.com">Написать автору</a></li>
+    </ul>
+  </body>
+</html>

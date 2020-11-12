@@ -1,0 +1,56 @@
+@import url("fonts/YandexSans.css");
+
+body {
+  font-family: "Yandex Sans Text", cursive;
+}
+
+.header {
+  display: flex;
+}
+
+.header .button {
+  background-color: #eceef0;
+  border-radius: 28px;
+  display: inline-block;
+  cursor: pointer;
+  color: #000000;
+  font-size: 15px;
+  padding: 2px 33px;
+  margin: auto;
+  margin-left: 5px;
+  margin-right: 5px;
+  text-align: center;
+}
+
+.header .button:hover {
+  background-color: #d1d1d1;
+}
+
+.header .button:active {
+  position: relative;
+  top: 1px;
+}
+
+.cards {
+  display: flex;
+}
+
+.cards p {
+  color: #a7aebe;
+}
+
+.cards h4 {
+  line-height: 0px;
+}
+
+.cards div {
+  min-width: 110px;
+  max-width: 110px;
+  padding: 10px;
+  margin: 5px 5px;
+}
+
+.cards div:hover {
+  margin: 4px 4px;
+  border: 1px solid #989898;
+}

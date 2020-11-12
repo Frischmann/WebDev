@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      body {
+        margin: 50px;
+      }
+
+      button {
+        background-image: linear-gradient(
+          to right,
+          #ff512f 0%,
+          #dd2476 51%,
+          #ff512f 100%
+        );
+
+        margin: 50px;
+
+        padding: 15px 45px;
+        text-align: center;
+        text-transform: uppercase;
+        transition: 0.5s;
+        background-size: 200% auto;
+        color: white;
+        box-shadow: 0 0 20px #eee;
+        border-radius: 10px;
+        display: block;
+      }
+
+      button:hover {
+        background-position: right center;
+        color: #fff;
+        text-decoration: none;
+      }
+
+      button:active {
+        box-shadow: inset 1px 1px 10px #333;
+      }
+
+      #b1:hover {
+        transition: all 0.5s;
+        transform: rotateX(90deg);
+      }
+
+      #b2:hover {
+        transition: all 0.5s;
+        transform: scale(2, 0.5);
+      }
+
+      #b3:hover {
+        transition: all 0.5s;
+        transform: translate(120px, 50%);
+      }
+    </style>
+    <title>Практическое задание №9</title>
+  </head>
+  <body>
+    <button id="b1">Кнопка №1</button>
+    <button id="b2">Кнопка №2</button>
+    <button id="b3">Кнопка №3</button>
+  </body>
+</html>
