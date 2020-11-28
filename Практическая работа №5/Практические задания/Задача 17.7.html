@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Задача 17.7</title>
+  </head>
+  <body>
+    <script>
+      arr = [
+        "Понедельник",
+        "Вторник",
+        "Среда",
+        "Четверг",
+        "Пятница",
+        "Суббота",
+        "Воскресенье",
+      ];
+      time = new Date();
+
+      for (i in arr) {
+        if (i == time.getDay() - 1) {
+          console.log(`%c${arr[i]}`, "font-style: italic;");
+          continue;
+        }
+        console.log(arr[i]);
+      }
+    </script>
+  </body>
+</html>

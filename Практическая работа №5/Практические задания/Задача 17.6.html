@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Задача 17.6</title>
+  </head>
+  <body>
+    <script>
+      arr = [
+        "Понедельник",
+        "Вторник",
+        "Среда",
+        "Четверг",
+        "Пятница",
+        "Суббота",
+        "Воскресенье",
+      ];
+      for (i in arr) {
+        if (i == 5 || i == 6) {
+          console.log(`%c${arr[i]}`, "font-weight: bold;");
+          continue;
+        }
+        console.log(arr[i]);
+      }
+    </script>
+  </body>
+</html>
