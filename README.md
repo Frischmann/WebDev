@@ -13,10 +13,10 @@
   <li><p><b>Практическая работа №4</b><br>
       <a href="https://github.com/Frischmann/WebDev/tree/master/Практическая%20работа%20№4">Ссылка на работу</p></a>
   </li>
-  <li><p><b>Практическая работа №4</b><br>
+  <li><p><b>Практическая работа №5</b><br>
       <a href="https://github.com/Frischmann/WebDev/tree/master/Практическая%20работа%20№5">Ссылка на работу</p></a>
   </li>
-  <li><p><b>Практическая работа №4</b><br>
+  <li><p><b>Практическая работа №6</b><br>
       <a href="https://github.com/Frischmann/WebDev/tree/master/Практическая%20работа%20№6">Ссылка на работу</p></a>
   </li>
 </ol>
