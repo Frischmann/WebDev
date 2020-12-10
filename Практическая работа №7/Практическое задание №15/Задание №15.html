@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Задача</title>
+    <style>
+      #original {
+        border: solid 1px #ccc;
+        width: 550px;
+        height: 400px;
+        padding: 5px;
+      }
+
+      #thumbnail a {
+        border: solid 1px #ccc;
+        width: 100px;
+        height: 100px;
+        padding: 3px;
+        margin: 2px;
+        float: left;
+      }
+
+      #thumbnail a:hover {
+        border-color: #ff0000;
+      }
+
+      #thumbnail li {
+        list-style: none;
+      }
+
+      #thumbnail {
+        margin: 0;
+        padding: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <p>
+      <img id="original" src="img/img1.jpg" alt="Large image" />
+    </p>
+
+    <ul id="thumbnail">
+      <li>
+        <a href="img/img2.jpg" title="Image 2"><img src="img-tn/img2.jpg" /></a>
+      </li>
+      <li>
+        <a href="img/img3.jpg" title="Image 3"><img src="img-tn/img3.jpg" /></a>
+      </li>
+      <li>
+        <a href="img/img4.jpg" title="Image 4"><img src="img-tn/img4.jpg" /></a>
+      </li>
+      <li>
+        <a href="img/img5.jpg" title="Image 5"><img src="img-tn/img5.jpg" /></a>
+      </li>
+      <li>
+        <a href="img/img6.jpg" title="Image 6"><img src="img-tn/img6.jpg" /></a>
+      </li>
+    </ul>
+
+    <script>
+      thumbnail.onclick = function (e) {
+        let thumbnail = e.target.closest("a");
+
+        if (!thumbnail) return;
+        showThumbnail(thumbnail.href, thumbnail.title);
+        e.preventDefault();
+      };
+
+      function showThumbnail(href, title) {
+        original.src = href;
+        original.alt = title;
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Задача 7.2</title>
+  </head>
+  <body>
+    <h1>С момента нажатия на кнопку прошло: <span id="num">0</span> секунд</h1>
+    <button onclick="start(true)">Начать отсчет!</button>
+    <button onclick="start(false)">Остановить отчет!</button>
+    <script>
+      var timer;
+
+      function start(command) {
+        if (command) {
+          var seconds = 0;
+          timer = setInterval(() => {
+            seconds++;
+            document.getElementById("num").innerHTML = seconds;
+          }, 1000);
+        } else {
+          timer = clearInterval(timer);
+          document.getElementById("num").innerHTML = 0;
+        }
+      }
+    </script>
+  </body>
+</html>

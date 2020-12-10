@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Задача 4.2</title>
+  </head>
+  <body>
+    <input id="field" type="text" />
+    <button id="btn1" onclick="delText()">Удалить текст</button>
+    <button id="btn2" onclick="setText()">Восстановить текст</button>
+    <script>
+      var text = "";
+
+      function getText() {
+        if (document.getElementById("field").value != "")
+          text = document.getElementById("field").value;
+      }
+
+      function delText() {
+        getText();
+        document.getElementById("field").value = "";
+      }
+
+      function setText() {
+        document.getElementById("field").value = text;
+      }
+    </script>
+  </body>
+</html>

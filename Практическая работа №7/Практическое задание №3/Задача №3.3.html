@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Задача 3.3</title>
+  </head>
+  <body>
+    <button id="btn" onclick="onClick()">На меня нажали 0 раз!</button>
+    <script>
+      var clicks = 0;
+
+      function onClick() {
+        clicks++;
+        document.getElementById(
+          "btn"
+        ).innerHTML = `На меня нажали ${clicks} раз!`;
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Задача 5.1</title>
+  </head>
+  <body>
+    <p id="text">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur eum
+      nam eaque dignissimos sapiente est necessitatibus reprehenderit saepe
+      voluptate iste, ea odit, nesciunt temporibus ipsam accusantium possimus ex
+      cupiditate rem.
+    </p>
+    <button onclick="changeText()">Изменить стиль текста</button>
+    <script>
+      function changeText() {
+        document.getElementById("text").style.color = "#4a4e69";
+        document.getElementById("text").style.fontSize = "30px";
+        document.getElementById("text").style.fontStyle = "italic";
+        document.getElementById("text").style.color = "#4a4e69";
+      }
+    </script>
+  </body>
+</html>

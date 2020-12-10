@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Задача 7.3</title>
+    <style>
+      body {
+        text-align: center;
+      }
+    </style>
+    <script>
+      var tick = new Audio("tick.mp3");
+      function clock() {
+        var date = new Date();
+        var hours = date.getHours();
+        var minutes = date.getMinutes();
+        var seconds = date.getSeconds();
+        if (hours < 10) hours = "0" + hours;
+        if (minutes < 10) minutes = "0" + minutes;
+        if (seconds < 10) seconds = "0" + seconds;
+        tick.play();
+        document.getElementById("clock").innerHTML =
+          hours + ":" + minutes + ":" + seconds;
+        setTimeout("clock()", 1000);
+      }
+    </script>
+  </head>
+  <body onload="clock()">
+    <h1>Точное время:</h1>
+    <h1 id="clock"></h1>
+  </body>
+</html>

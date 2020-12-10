@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Задача 3.1</title>
+  </head>
+  <body>
+    <input id="field" type="text" placeholder="Hello" />
+    <script>
+      window.addEventListener("click", function (e) {
+        if (document.getElementById("field").contains(e.target)) {
+          field.placeholder = "Hello";
+        } else {
+          field.placeholder = "World";
+        }
+      });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Задача 7.1</title>
+  </head>
+  <body>
+    <h1>С момента нажатия на кнопку прошло: <span id="num">0</span> секунд</h1>
+    <button onclick="start()">Начать отсчет!</button>
+    <script>
+      function start() {
+        var seconds = 0;
+        setInterval(() => {
+          seconds++;
+          document.getElementById("num").innerHTML = seconds;
+        }, 1000);
+      }
+    </script>
+  </body>
+</html>

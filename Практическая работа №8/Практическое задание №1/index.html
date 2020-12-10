@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Задача 1</title>
+  </head>
+  <body>
+    <img
+      id="eee"
+      style="cursor: pointer; width: 30%; position: absolute; left: 0"
+      onclick="move(this)"
+      src="car.png"
+      alt="Машина для создания анимации"
+    />
+    <script>
+      function move(e) {
+        var left = 0;
+        var size = window.screen.width - e.width;
+        var a = setInterval(function () {
+          if (left++ > size) {
+            clearInterval(timerId);
+          }
+          e.style.left = left + "px";
+        }, 1);
+      }
+    </script>
+  </body>
+</html>

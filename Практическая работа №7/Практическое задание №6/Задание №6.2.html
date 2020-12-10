@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Задача 6.2</title>
+  </head>
+  <body>
+    <p>Абзац с текстом.</p>
+    <p>Абзац с текстом.</p>
+    <p>Абзац с текстом.</p>
+    <p>Абзац с текстом.</p>
+    <p>Абзац с текстом.</p>
+    <p>Абзац с текстом.</p>
+    <p>Абзац с текстом.</p>
+    <p>Абзац с текстом.</p>
+    <p>Абзац с текстом.</p>
+
+    <button style="display: block; margin-top: 1%" onclick="setNum()">
+      Нажмите на меня!
+    </button>
+
+    <script>
+      function setNum() {
+        var arr = document.getElementsByTagName("p");
+        for (var i in arr) arr[i].innerHTML = `${i}. ${arr[i].innerHTML}`;
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Задача 2</title>
+  </head>
+  <body>
+    <script>
+      function animate({ timing, draw, duration }) {
+        let start = performance.now();
+
+        requestAnimationFrame(function animate(time) {
+          let timeFraction = (time - start) / duration;
+          if (timeFraction > 1) timeFraction = 1;
+
+          let progress = timing(timeFraction);
+
+          draw(progress);
+
+          if (timeFraction < 1) {
+            requestAnimationFrame(animate);
+          }
+        });
+      }
+
+      function animateText(textArea) {
+        let text = textArea.value;
+        let to = text.length,
+          from = 0;
+
+        animate({
+          duration: 5000,
+          timing: bounce,
+          draw: function (progress) {
+            let result = (to - from) * progress + from;
+            textArea.value = text.substr(0, Math.ceil(result));
+          },
+        });
+      }
+
+      function bounce(timeFraction) {
+        for (let a = 0, b = 1, result; 1; a += b, b /= 2) {
+          if (timeFraction >= (7 - 4 * a) / 11) {
+            return (
+              -Math.pow((11 - 6 * a - 11 * timeFraction) / 4, 2) +
+              Math.pow(b, 2)
+            );
+          }
+        }
+      }
+    </script>
+
+    <textarea id="ta" rows="5" cols="60">
+Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestiae, reiciendis. Pariatur facere aliquam mollitia laboriosam, ex excepturi ad expedita modi, libero officia nisi temporibus tenetur quaerat, dicta perspiciatis soluta qui.</textarea
+    >
+    <button style="display: block; margin-top: 1%" onclick="animateText(ta)">
+      Animate textarea
+    </button>
+  </body>
+</html>

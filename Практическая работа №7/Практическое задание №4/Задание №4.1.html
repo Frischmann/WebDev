@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Задача 4.1</title>
+    <style>
+      input[type="text"] {
+        color: #e63946;
+      }
+    </style>
+  </head>
+  <body>
+    <input id="field" type="text" value="Lorem ipsum dolor" />
+    <button id="btn" onclick="changeStyle()">Change text</button>
+    <script>
+      function changeStyle() {
+        document.getElementById("field").value =
+          "Sit amet consectetur adipisicing elit";
+        document.getElementById("field").style.color = "#4a4e69";
+        document.getElementById("field").style.width = "300px";
+        document.getElementById("field").style.height = "50px";
+        document.getElementById("field").style.borderRadius = "25px";
+      }
+    </script>
+  </body>
+</html>

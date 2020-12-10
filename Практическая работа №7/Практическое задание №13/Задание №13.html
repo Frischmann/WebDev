@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <title>Задача 13</title>
+    <style>
+      .tooltip {
+        position: relative;
+        display: inline-block;
+        margin: 5% 40%;
+      }
+    </style>
+  </head>
+  <body>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero eligendi
+      adipisci commodi eum fugiat unde, optio sunt, quis quasi fuga tempora
+      dolor et modi dignissimos animi ducimus, magni cumque saepe.
+    </p>
+    <div class="tooltip">
+      Текст 1
+      <span>Текст первого tooltip</span>
+    </div>
+    </div>
+
+    <script>
+      $(".tooltip").mouseover(function (event) {
+        $(".tooltip").children("span").css({
+          "visibility": "visible",
+          "width": "120px",
+          "top": "100%",
+          "left": "50%",
+          "background-color": "black",
+          "color": "#fff",
+          "text-align": "center",
+          "border-radius": "6px",
+          "padding": "5px 0",
+          "margin-left": "-60px",
+
+          "position": "absolute",
+          "z-index": "1",
+        });
+      });
+
+      $(".tooltip").mouseout(function (event) {
+        $(".tooltip").children("span").css({
+          "visibility": "hidden",
+        });
+      });
+    </script>
+  </body>
+</html>

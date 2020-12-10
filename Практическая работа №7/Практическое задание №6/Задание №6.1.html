@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Задача 6.1</title>
+  </head>
+  <body>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam voluptatem
+      deleniti maiores voluptas adipisci ducimus soluta laborum similique eius
+      iste nostrum explicabo illum aperiam, ipsa aliquid neque id, provident
+      suscipit.
+    </p>
+    <p>
+      Quisquam commodi tempore repellendus accusantium, laborum enim deleniti.
+      Natus beatae iure, quae dolorum odit at dolore inventore. Numquam soluta,
+      repellendus voluptates corrupti, explicabo rerum necessitatibus ab quaerat
+      culpa dicta exercitationem.
+    </p>
+    <p>
+      Quo error odio recusandae quaerat minima nisi quis, eum impedit distinctio
+      aut blanditiis, inventore nulla eveniet nihil sit eaque obcaecati mollitia
+      eligendi, velit officia? Eius, hic voluptatem. Aspernatur, id ipsa.
+    </p>
+    <button onclick="changeText()">Поменять текст!</button>
+    <script>
+      function changeText() {
+        var p1 = document.body.children[0];
+        var p2 = document.body.children[1];
+
+        [p1.innerHTML, p2.innerHTML] = [p2.innerHTML, p1.innerHTML];
+      }
+    </script>
+  </body>
+</html>
