@@ -22,4 +22,7 @@
   <li><p><b>Практическая работа №7</b><br>
       <a href="https://github.com/Frischmann/WebDev/tree/master/Практическая%20работа%20№7">Ссылка на работу</p></a>
   </li>
+  <li><p><b>Практическая работа №8</b><br>
+      <a href="https://github.com/Frischmann/WebDev/tree/master/Практическая%20работа%20№8">Ссылка на работу</p></a>
+  </li>
 </ol>
